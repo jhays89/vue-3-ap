@@ -1,2 +1,2 @@
 # vue-3-app
-building vue 3 app from scratch with many common web app UI features
+Like all things this started off as just a repo to learn Vue3 and related technologies but has turned into a game creator. Why? I get bored of building the same web app 10 different ways. Is Vue3 the best weapon for a game creator (btw, you'll be able to play your games you make!)... nah probably not. But, the few years (months even?) I have of deving games I have learned that it will really stretch your capbabilities as a dev. So a game it is. Oh and yes an unfortunate name for this repo/project =(

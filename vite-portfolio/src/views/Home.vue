@@ -1,22 +1,19 @@
 <template>
   <div>
-    <h1>Home</h1>
-    <button @click="getPlayerName">
-      PlayerName
-    </button>
+    <h1>Home: {{ playerName }}</h1>
   </div>
 </template>
 
 <script>
-import store from '../store';
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+
 export default {
   setup() {
-    const getPlayerName = () => {
-      return store.getters;
-    };
+    const store = useStore();
 
     return {
-      getPlayerName
+      playerName: computed(() => store.getters.getPlayerName)
     }
   }
 }

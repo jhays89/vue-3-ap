@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
-import Stage1 from "../stages/Stage1.vue";
+import Builder from "../views/Builder.vue";
 
 const routes = [
   {
@@ -15,10 +15,10 @@ const routes = [
     component: About,
   },
   {
-    path: "/stage-1",
-    name: "Stage1",
-    component: Stage1,
-  },
+    path: "/builder",
+    name: "Builder",
+    component: Builder,
+  }
 ];
 
 const router = createRouter({

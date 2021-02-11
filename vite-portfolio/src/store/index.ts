@@ -1,15 +1,18 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
+import getters from './getters'
 
-const store = new (createStore({
-  state: {
-    stageName: 'Introduction',
-    playerName: 'Fodder'
+const myStore = {
+  state() {
+    return {
+      stageName: "Intro",
+      playerName: "Fodder"
+    }
   },
   getters: {
-    getPlayerName: state => {
-      return state.playerName;
-    }
+    ...getters 
   }
-}) as any);
+}
+
+const store = createStore(myStore);
 
 export default store;

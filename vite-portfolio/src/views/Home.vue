@@ -1,6 +1,8 @@
 <template>
   <div>
     <h1>Home: {{ playerName }}</h1>
+    <p>Paragraph</p>
+    <a href="https://www.google.com">Link</a>
   </div>
 </template>
 

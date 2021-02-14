@@ -1,16 +1,17 @@
 <template>
-  <div id="app">
-    <Navigation />
-    <router-view />
-  </div>
+  <Navigation />
+  <router-view class="app-page" />
+  <Footer />
 </template>
 
 <script>
 import Navigation from './components/navigation/Navigation.vue';
+import Footer from './components/footer/Footer.vue';
 
 export default {
   components: {
-    Navigation
+    Navigation,
+    Footer
   },
   setup() {
     return {
@@ -21,12 +22,17 @@ export default {
 </script>
 
 <style>
-#app {
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 </style>

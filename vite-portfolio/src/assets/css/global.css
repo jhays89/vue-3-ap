@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+body {
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #035ee8;
+  margin: 0 0 20px 0;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+a {
+  color: #2de2e6;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+a:hover {
+  color: #9700cc;
+}
+
+/*Navigation*/
+.app-navigation {
+  background-color: #333333;
+  height: 50px;
+}
+
+/*Footer*/
+.app-footer {
+  color: #ffffff;
+  background-color: #f6019d;
+  padding: 0 20px;
+  height: 50px;
+}
+
+/*Content*/
+.app-page {
+  margin: 50px 0 0 0;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=global.css.map */

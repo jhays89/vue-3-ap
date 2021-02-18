@@ -21,18 +21,16 @@ export default {
 }
 </script>
 
-<style>
-body {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-  margin: 0;
-}
+<style lang="scss">
+@use 'src/assets/sass/constants.scss';
 
 #app {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.app-page {
+  margin: constants.$content-margin;
 }
 </style>

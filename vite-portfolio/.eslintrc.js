@@ -1,4 +1,9 @@
 module.exports = {
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+},
   extends: [
     // add more generic rulesets here, such as:
     // 'eslint:recommended',
@@ -13,7 +18,5 @@ module.exports = {
         "allowFirstLine": false
       }
     }]
-    // override/add rules settings here, such as:
-    // 'vue/no-unused-vars': 'error'
   }
 }

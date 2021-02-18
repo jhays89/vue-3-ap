@@ -1,7 +1,9 @@
 <template>
   <div class="app-navigation">
     <div class="avatar-container">
-      <img src="/src/assets/justin-avatar.png">
+      <router-link to="/">
+        <img src="/src/assets/justin-avatar.png">
+      </router-link>
     </div>
     <div class="link-container">
       <router-link to="/">
@@ -23,7 +25,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@use 'src/assets/sass/constants.scss';
+
 .app-navigation {
   position: fixed;
   top: 0;
@@ -32,6 +36,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: constants.$base-color;
+  height: constants.$bar-height;
 }
 
 .app-navigation a {
